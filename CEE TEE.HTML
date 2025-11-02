@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CEE TEE Music | Home</title>
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --panel:#151515;
+      --muted:#9b9b9b;
+      --accent:#ff8c42;
+      --card:#171717;
+      --shadow:0 6px 18px rgba(0,0,0,0.5);
+      font-family: Inter, system-ui, sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#eee;min-height:100vh;display:flex}
+    a{color:inherit;text-decoration:none}
+    header,footer{padding:16px;text-align:center;background:var(--panel)}
+    .sidebar{width:200px;background:var(--panel);padding:20px;flex-shrink:0}
+    .logo{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:20px;text-align:center}
+    nav a{display:block;padding:10px;border-radius:6px;color:var(--muted);margin-bottom:6px}
+    nav a.active,nav a:hover{background:rgba(255,255,255,0.1);color:#fff}
+    main{flex:1;padding:24px}
+    h1{margin-bottom:12px;color:var(--accent)}
+    .cards{display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:var(--card);padding:10px;border-radius:8px;width:160px;text-align:center;box-shadow:var(--shadow)}
+    .card img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+    footer{color:var(--muted);font-size:13px;margin-top:20px}
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">CEE TEE 🎵</div>
+    <nav>
+      <a href="index.html" class="active">🏠 Home</a>
+      <a href="trending.html">🔥 Trending</a>
+      <a href="artists.html">🎤 Artists</a>
+      <a href="videos.html">🎥 Videos</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <h1>Welcome to CEE TEE Music</h1>
+    <p>Your home for trending beats, local artists, and the best playlists.</p>
+    <h2 style="margin-top:24px;">Hot Tracks</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526178614251-9dbd3d77d7f7?auto=format&fit=crop&w=400&q=60">
+        <p>Afro Vibes</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508898578281-774ac4893aee?auto=format&fit=crop&w=400&q=60">
+        <p>R&B Flow</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519996528534-1520f6b0f3a4?auto=format&fit=crop&w=400&q=60">
+        <p>Old School</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
